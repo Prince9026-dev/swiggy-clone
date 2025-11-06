@@ -38,19 +38,3 @@ for(let i=0; i<imagesstore.length; i++){
   card.appendChild(cart);
   resto.appendChild(card);    
 };
-
-
-
-const b=document.querySelectorAll(".add-btn");
-b.addEventListener("click",(e)=>{
-    const price = Number(e.target.dataset.price);
-    total_amount += price;
-    get_total.textContent=price;
-})
-
-  // ✅ Event listener to update total
-  // cart.addEventListener("click", (e) => {
-
-    // totalBox.textContent = `Total: ₹${total}`;
-    // e.target.textContent = "Added ✅";
-    // e.target.disabled = true;
